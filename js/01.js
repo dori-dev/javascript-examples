@@ -1,3 +1,5 @@
-console.log("Hello, World!");
-document.write("Hello, World!");
-alert("Hello, World!");
+// This is comment
+let string = "Hello, world!";
+console.log(string);
+document.write(string);
+alert(string);
