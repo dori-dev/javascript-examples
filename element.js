@@ -20,3 +20,9 @@ element.classList;
 element.classList.add("new-class-name");
 element.classList.remove("exists-class-name");
 element.classList.toggle("class-name");
+
+// Children, Parent, Pervious and Next Element
+Array.from(element.children);
+element.parentElement;
+element.previousElementSibling;
+element.nextElementSibling;
