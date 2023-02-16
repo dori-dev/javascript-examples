@@ -14,3 +14,9 @@ element.title = "Example element title.";
 element.setAttribute("data-attributeName", "attributeValue");
 element.dataset.attributeName = "attributeValue";
 element.dataset.attributeName;
+
+// Element Class
+element.classList;
+element.classList.add("new-class-name");
+element.classList.remove("exists-class-name");
+element.classList.toggle("class-name");
