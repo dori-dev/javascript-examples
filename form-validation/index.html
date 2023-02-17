@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Popup Modal</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="m-5">
+        <div class="mx-auto">
+          <h1 id="header" class="mb-4">Login</h1>
+          <h6>
+            Username:
+            <span id="username" class="text-muted">
+              Please fill username field.
+            </span>
+          </h6>
+          <h6>
+            Password:
+            <span id="password" class="text-muted">
+              Please fill password field.
+            </span>
+          </h6>
+          <hr />
+          <form class="form" method="get" action="">
+            <div class="form-group mb-4">
+              <label for="usernameField" class="mb-1 form-label"
+                >Username</label
+              >
+              <div class="input-group has-validation">
+                <span class="input-group-text" id="inputGroupPrepend">@</span>
+                <input
+                  class="form-control"
+                  type="text"
+                  name="username"
+                  id="usernameField"
+                  placeholder="Your username..."
+                  aria-describedby="inputGroupPrepend"
+                />
+                <div class="invalid-feedback">
+                  Please choose a valid username.
+                </div>
+              </div>
+            </div>
+            <div class="form-group mb-4">
+              <label for="passwordField" class="mb-1 form-label"
+                >Password</label
+              >
+              <input
+                class="form-control"
+                type="password"
+                name="password"
+                id="passwordField"
+                placeholder="Your password..."
+              />
+              <div class="invalid-feedback" id="passwordErrorMessage">
+                Please choose a valid password.
+              </div>
+            </div>
+            <input
+              type="submit"
+              value="Login"
+              name="submit"
+              class="btn btn-success px-5"
+            />
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="validation.js"></script>
+  </body>
+</html>
