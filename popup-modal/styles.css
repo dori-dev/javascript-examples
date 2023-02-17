@@ -27,6 +27,7 @@ button {
 .popup-btn {
   background-color: #0984e3;
   border: 1px solid #0767b0;
+  margin-right: 30px;
 }
 
 button.popup-close {
@@ -57,7 +58,8 @@ button.popup-close {
   border-radius: 5px;
   position: fixed;
   left: 50%;
-  transform: translateX(-50%);
+  top: 50%;
+  transform: translate(-50%, -50%);
   padding: 20px;
   opacity: 0;
   visibility: hidden;
