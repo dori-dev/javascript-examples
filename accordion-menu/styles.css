@@ -1,0 +1,60 @@
+body {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.accordion {
+  width: 80%;
+}
+
+.accordion > div {
+  margin-bottom: 5px;
+}
+
+.accordion > div > span {
+  background-color: #eee;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.accordion > div > span:after {
+  content: "\002B";
+  float: right;
+}
+
+.accordion > div > span:hover {
+  background-color: #ddd;
+}
+
+.accordion > div > div {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-top: none;
+  display: none;
+}
+
+.accordion > div.show > span {
+  background-color: #ddd;
+  border-bottom: none;
+}
+
+.accordion > div.show > div {
+  display: block;
+}
+
+.accordion > div.show > span:after {
+  content: "\2212";
+}
+
+.accordion > div > span,
+.accordion > div > div {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
