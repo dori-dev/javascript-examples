@@ -32,6 +32,7 @@ button {
 button.popup-close {
   background-color: #d63031;
   border: 1px solid #af2323;
+  width: 100%;
 }
 
 .popup-wrapper {
