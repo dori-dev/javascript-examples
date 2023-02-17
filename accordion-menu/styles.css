@@ -2,8 +2,14 @@ body {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
-.accordion {
+.accordion,
+.accordion-title {
   width: 80%;
+  margin: 10px auto;
+}
+
+.accordion-title {
+  margin-top: 40px;
 }
 
 .accordion > div:first-child > span {
@@ -37,27 +43,23 @@ body {
   float: right;
 }
 
-.accordion > div > span:hover {
+.accordion > div.show > span:after {
+  content: "\2212";
+}
+
+.accordion > div > span:hover,
+.accordion > div.show > span {
   background-color: #ddd;
 }
 
 .accordion > div > div {
   width: 100%;
-  border: 1px solid #ddd;
-  border-bottom: none;
-  border-top: none;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
   max-height: 0;
   overflow: hidden;
-  transition: all 0.6s;
+  transition: all 0.5s;
   padding: 0 10px;
-}
-
-.accordion > div.show > span {
-  background-color: #ddd;
-}
-
-.accordion > div.show + div > span {
-  border-top: none;
 }
 
 .accordion > div.show > div {
@@ -65,8 +67,8 @@ body {
   border-bottom: 1px solid #ddd;
 }
 
-.accordion > div.show > span:after {
-  content: "\2212";
+.accordion > div.show + div > span {
+  border-top: none;
 }
 
 .accordion > div > span,
