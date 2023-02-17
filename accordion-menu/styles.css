@@ -6,8 +6,20 @@ body {
   width: 80%;
 }
 
-.accordion > div {
-  margin-bottom: 5px;
+.accordion > div:first-child > span {
+  border-radius: 5px 5px 0 0;
+}
+
+.accordion > div:last-child > span {
+  border-radius: 0 0 5px 5px;
+}
+
+.accordion > div.show:last-child > span {
+  border-radius: 0;
+}
+
+.accordion > div.show:last-child > div {
+  border-radius: 0 0 5px 5px;
 }
 
 .accordion > div > span {
@@ -17,6 +29,7 @@ body {
   cursor: pointer;
   padding: 10px;
   border: 1px solid #ddd;
+  border-bottom: none;
 }
 
 .accordion > div > span:after {
@@ -30,19 +43,26 @@ body {
 
 .accordion > div > div {
   width: 100%;
-  padding: 10px;
   border: 1px solid #ddd;
+  border-bottom: none;
   border-top: none;
-  display: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.6s;
+  padding: 0 10px;
 }
 
 .accordion > div.show > span {
   background-color: #ddd;
-  border-bottom: none;
+}
+
+.accordion > div.show + div > span {
+  border-top: none;
 }
 
 .accordion > div.show > div {
-  display: block;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
 }
 
 .accordion > div.show > span:after {
