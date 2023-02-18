@@ -18,9 +18,14 @@ if (!todos) {
 
 function updateTodos(todos) {
   todosList.innerHTML = "";
-  todos.forEach((todo) => {
+  todos.forEach((todo, index) => {
     let li = sampleTodo.cloneNode(true);
     li.querySelector("span").textContent = todo;
+    li.querySelector(".delete").addEventListener("click", (e) => {
+      todos.splice(index, 1);
+      localStorage.setItem("todos", JSON.stringify(todos));
+      updateTodos(todos);
+    });
     todosList.prepend(li);
   });
 }
