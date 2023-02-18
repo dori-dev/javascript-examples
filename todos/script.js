@@ -33,10 +33,13 @@ if (!todos) {
 
 // Complete & Delete Todo
 
-function updateTodos(todos) {
+function updateTodos(todos, filteredTodos = null) {
   todosList.innerHTML = "";
   todos.forEach((todo, index) => {
     let li = sampleTodo.cloneNode(true);
+    if (filteredTodos) {
+      li.hidden = filteredTodos.includes(todo) ? false : true;
+    }
     let span = li.querySelector("span");
     span.textContent = todo.content;
     if (todo.status) {
@@ -67,23 +70,47 @@ Array.from(actions.children).forEach((action) => {
   let form = document.querySelector(`#${actionName}`);
   action.addEventListener("click", (e) => {
     e.preventDefault();
+    if (actionName === "add") {
+      updateTodos(todos);
+    }
     let formWrapper = document.querySelector("#formWrapper");
     Array.from(formWrapper.children).forEach((form) => {
       form.hidden = true;
     });
     form.hidden = false;
   });
-  form.addEventListener("submit", (e) => {
-    e.preventDefault();
+
+  // Add todo
+  if (actionName === "add") {
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      let input = form.querySelector("input");
+      if (input.value.trim()) {
+        todos.push({
+          content: input.value,
+          status: false,
+        });
+        localStorage.setItem("todos", JSON.stringify(todos));
+        updateTodos(todos);
+        input.value = "";
+      }
+    });
+  }
+  // Search todo
+  if (actionName === "search") {
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+    });
     let input = form.querySelector("input");
-    if (input.value && actionName === "add") {
-      todos.push({
-        content: input.value,
-        status: false,
-      });
-      localStorage.setItem("todos", JSON.stringify(todos));
-      updateTodos(todos);
-      input.value = "";
-    }
-  });
+    input.addEventListener("input", (e) => {
+      if (input.value) {
+        let filteredTodos = todos.filter((todo) =>
+          todo.content.toLowerCase().includes(input.value.toLowerCase())
+        );
+        updateTodos(todos, filteredTodos);
+      } else {
+        updateTodos(todos);
+      }
+    });
+  }
 });
