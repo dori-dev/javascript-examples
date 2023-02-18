@@ -1,0 +1,19 @@
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-group-item span,
+.list-group-item img {
+    cursor: pointer;
+}
+
+
+video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}

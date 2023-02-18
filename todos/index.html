@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Todos</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="my-5 mx-auto">
+        <h1 class="text-center text-light">Todos</h1>
+        <div id="actions" class="text-center mb-3">
+          <a class="btn btn-primary" data-action="add">Add</a>
+          <a class="btn btn-success" data-action="search">Search</a>
+        </div>
+        <div id="formWrapper" class="mb-3">
+          <form action="" id="add">
+            <input
+              type="text"
+              class="form-control"
+              name="add"
+              placeholder="Add todo..."
+            />
+          </form>
+          <form action="" id="search">
+            <input
+              type="text"
+              class="form-control"
+              name="search"
+              placeholder="Search todos..."
+            />
+          </form>
+        </div>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <span>An item</span>
+            <img src="media/delete.png" alt="delete icon" />
+          </li>
+        </ul>
+      </div>
+    </div>
+    <video loop autoplay muted src="media/cut.mp4" type="video/mp4"></video>
+    <script src="script.js"></script>
+  </body>
+</html>
