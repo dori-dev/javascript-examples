@@ -4,6 +4,8 @@ let sampleTodo = document.querySelector("#sampleTodo").cloneNode(true);
 sampleTodo.hidden = false;
 sampleTodo.removeAttribute("id");
 
+// Set Default Todos
+
 try {
   todos = JSON.parse(todos);
   todos = todos.length ? todos : null;
@@ -29,6 +31,8 @@ if (!todos) {
   localStorage.setItem("todos", JSON.stringify(todos));
 }
 
+// Complete & Delete Todo
+
 function updateTodos(todos) {
   todosList.innerHTML = "";
   todos.forEach((todo, index) => {
@@ -53,3 +57,20 @@ function updateTodos(todos) {
 }
 
 updateTodos(todos);
+
+// Add & Search Todo
+
+let actions = document.querySelector("#actions");
+
+Array.from(actions.children).forEach((action) => {
+  let actionName = action.dataset.action;
+  action.addEventListener("click", (e) => {
+    e.preventDefault();
+    let formWrapper = document.querySelector("#formWrapper");
+    Array.from(formWrapper.children).forEach((form) => {
+      form.hidden = true;
+    });
+    let form = document.querySelector(`#${actionName}`);
+    form.hidden = false;
+  });
+});
