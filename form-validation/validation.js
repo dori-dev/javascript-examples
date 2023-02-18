@@ -5,9 +5,18 @@ let password = document.querySelector("#password");
 let passwordErrorMessage = document.querySelector("#passwordErrorMessage");
 const usernamePattern = /^[a-zA-Z][\w._]{5,23}$/;
 let passwordEvaluate = 0;
+let usernameEvaluate = false;
 
 form.addEventListener("submit", (e) => {
-  e.preventDefault();
+  if (!(passwordEvaluate === 5 && usernameEvaluate)) {
+    e.preventDefault();
+    if (!usernameEvaluate) {
+      form.username.classList.add("is-invalid");
+    }
+    if (passwordEvaluate !== 5) {
+      form.password.classList.add("is-invalid");
+    }
+  }
 });
 
 // Username Input
@@ -16,9 +25,11 @@ function usernameValidation(username) {
   if (usernamePattern.test(username.value)) {
     username.classList.add("is-valid");
     username.classList.remove("is-invalid");
+    usernameEvaluate = true;
   } else {
     username.classList.add("is-invalid");
     username.classList.remove("is-valid");
+    usernameEvaluate = false;
   }
 }
 
