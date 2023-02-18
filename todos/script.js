@@ -64,13 +64,26 @@ let actions = document.querySelector("#actions");
 
 Array.from(actions.children).forEach((action) => {
   let actionName = action.dataset.action;
+  let form = document.querySelector(`#${actionName}`);
   action.addEventListener("click", (e) => {
     e.preventDefault();
     let formWrapper = document.querySelector("#formWrapper");
     Array.from(formWrapper.children).forEach((form) => {
       form.hidden = true;
     });
-    let form = document.querySelector(`#${actionName}`);
     form.hidden = false;
+  });
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    let input = form.querySelector("input");
+    if (input.value && actionName === "add") {
+      todos.push({
+        content: input.value,
+        status: false,
+      });
+      localStorage.setItem("todos", JSON.stringify(todos));
+      updateTodos(todos);
+      input.value = "";
+    }
   });
 });
