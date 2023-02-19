@@ -7,7 +7,12 @@ body {
   text-align: center;
 }
 
-#clock {
-  margin-top: 20px;
+#clock,
+#date {
+  margin-top: 40px;
   font-size: 50px;
+}
+
+#date {
+  margin-top: 20px;
 }
