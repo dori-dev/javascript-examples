@@ -27,7 +27,7 @@ function goPrevious() {
   console.log(active);
 }
 
-let sliderInterval = setInterval(goNext, timer);
+let runSlideshow = setInterval(goNext, timer);
 
 points.forEach((point, index) => {
   point.addEventListener("click", (e) => {
@@ -38,12 +38,20 @@ points.forEach((point, index) => {
 
 next.addEventListener("click", (e) => {
   goNext();
-  clearInterval(sliderInterval);
-  sliderInterval = setInterval(goNext, timer);
+  clearInterval(runSlideshow);
+  runSlideshow = setInterval(goNext, timer);
 });
 
 previous.addEventListener("click", (e) => {
   goPrevious();
-  clearInterval(sliderInterval);
-  sliderInterval = setInterval(goNext, timer);
+  clearInterval(runSlideshow);
+  runSlideshow = setInterval(goNext, timer);
+});
+
+slideshow.addEventListener("mouseover", (e) => {
+  clearInterval(runSlideshow);
+});
+
+slideshow.addEventListener("mouseleave", (e) => {
+  runSlideshow = setInterval(goNext, timer);
 });
