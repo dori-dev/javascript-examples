@@ -20,3 +20,10 @@ function goNext() {
 }
 
 setInterval(goNext, timer);
+
+points.forEach((point, index) => {
+  point.addEventListener("click", (e) => {
+    active = index;
+    classSwitcher();
+  });
+});

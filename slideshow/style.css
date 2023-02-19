@@ -9,6 +9,7 @@
 .slide {
   display: none;
   position: relative;
+  animation: fadeIn 1s;
 }
 
 .slide.active {
@@ -93,4 +94,13 @@
 
 .points span.active {
   background-color: #2c3e50;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
