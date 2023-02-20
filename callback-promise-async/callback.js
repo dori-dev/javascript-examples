@@ -52,3 +52,15 @@ addArticle({
 })
   .then(showArticles)
   .catch((error) => console.log(error));
+
+// Async
+async function init() {
+  await addArticle({
+    title: "Third Article",
+    content: "Hello golang.",
+  });
+  console.log("");
+  showArticles();
+}
+
+init();
