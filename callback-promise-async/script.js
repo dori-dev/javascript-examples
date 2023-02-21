@@ -8,8 +8,7 @@ let articles = document.querySelector("#articles");
 
 async function getAuthor(url, id) {
   let response = await fetch(url + id);
-  let author = await response.json();
-  return author;
+  return await response.json();
 }
 
 async function getArticles(url) {
