@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>آب و هوا</title>
+  </head>
+  <body>
+    <div class="container my-3">
+      <h1 class="text-center">آب و هوا</h1>
+      <hr />
+      <div class="row">
+        <div class="mx-auto col-md-7">
+          <form action="" class="form-group mt-5">
+            <input
+              type="text"
+              name="city"
+              id="city"
+              class="form-control"
+              placeholder="نام شهر..."
+            />
+          </form>
+          <div class="mt-3" id="result">
+            <div class="card mx-auto w-100" style="width: 18rem">
+              <div class="weather-wrapper">
+                <img src="default.png" alt="clouds" />
+              </div>
+              <div class="card-body">
+                <div class="d-flex align-items-center mb-5">
+                  <div class="fs-4" id="showCity">شهر</div>
+                  <div
+                    class="me-4 badge bg-secondary fs-6"
+                    id="showDescription"
+                  >
+                    وضعیت
+                  </div>
+                </div>
+                <div class="temp row g-md-5 g-1 justify-content-center">
+                  <div class="col-3">
+                    <div id="maxTemp">
+                      <span class="deg">25</span>
+                      <span>بالاترین دما</span>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div id="temp">
+                      <span class="deg">18</span>
+                      <span>دمای فعلی</span>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div id="minTemp">
+                      <span class="deg">15</span>
+                      <span>پایین ترین دما</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

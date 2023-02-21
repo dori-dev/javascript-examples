@@ -1,0 +1,48 @@
+@font-face {
+  font-family: "vazir";
+  src: url("vazir.woff2") format("woff2");
+}
+
+* {
+  font-family: "vazir";
+}
+
+.weather-wrapper {
+  height: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #aff3f3;
+}
+
+.weather-wrapper img {
+  width: 12rem;
+  height: 12rem;
+}
+
+.temp {
+  display: flex;
+}
+
+.temp > div > div {
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.temp > div > div > span {
+  display: block;
+  text-align: center;
+  color: #fefefe;
+}
+
+#maxTemp {
+  background-color: #d63031;
+}
+
+#temp {
+  background-color: #0984e3;
+}
+
+#minTemp {
+  background-color: #16a085;
+}
