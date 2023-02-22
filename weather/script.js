@@ -11,8 +11,12 @@ let temp = document.querySelector("#temp .deg");
 let minTemp = document.querySelector("#minTemp .deg");
 
 async function getWeather(city) {
-  let response = await fetch(url + city);
-  return await response.json();
+  try {
+    const response = await fetch(url + city);
+    return await response.json();
+  } catch (error) {
+    console.log(error);
+  }
 }
 
 form.addEventListener("submit", async (e) => {
