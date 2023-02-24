@@ -10,10 +10,14 @@ const muteSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><
 const videoInput = document.querySelector("#videoInput");
 const videoSource = document.querySelector("#videoSource");
 const chooseVideo = document.querySelector(".choose-video");
+const progress = document.querySelector(".progress-container");
+const progressValue = document.querySelector(".progress");
 
 videoInput.onchange = function () {
   videoSource.src = URL.createObjectURL(videoInput.files[0]);
   video.load();
+  video.loop = true;
+  video.play();
 };
 
 chooseVideo.addEventListener("click", (e) => {
@@ -51,7 +55,7 @@ function seekButton(n) {
 
 video.addEventListener("timeupdate", () => {
   let percent = (video.currentTime / video.duration) * 100;
-  document.querySelector(".progress").style.width = `${percent}%`;
+  progressValue.style.width = `${percent}%`;
 });
 
 function volumeControl(n) {
@@ -134,3 +138,12 @@ function stopVideo() {
     video.play();
   }
 }
+
+progress.addEventListener("click", (e) => {
+  let position = e.clientX;
+  let distance2left = progress.getBoundingClientRect().left;
+  let start2position = position - distance2left;
+  let value = start2position / progress.offsetWidth;
+  progressValue.style.width = `${value * 100}%`;
+  video.currentTime = value * video.duration;
+});
