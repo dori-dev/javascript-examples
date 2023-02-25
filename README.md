@@ -6,25 +6,27 @@ Many samples for Javascript.
 
 ## List of Examples
 
-|                  Project                  |
-| :---------------------------------------: |
-|     [Accordion Menu](accordion-menu/)     |
-|    [Promise](callback-promise-async/)     |
-|             [Clock](./clock/)             |
-|         [Fact Year](./fact-year/)         |
-|   [Form Validation](./form-validation/)   |
-|          [Movie App](movie-app/)          |
-| [Password Generator](password-generator/) |
-|        [Popup Modal](popup-modal/)        |
-|         [Recipe App](recipe-app/)         |
-|         [Slideshow)](slideshow/)          |
-|      [Smooth Scroll](smooth-scroll/)      |
-|           [Storage)](storage/)            |
-|      [Theme Changer](theme-changer/)      |
-|             [Todos)](todos/)              |
-|       [Video Player](video-player/)       |
-|           [Weather)](weather/)            |
-|             [Wow JS](wow-js/)             |
+|                  Project                  |                                  Link                                  |
+| :---------------------------------------: | :--------------------------------------------------------------------: |
+|     [Accordion Menu](accordion-menu/)     |     https://dori-dev.github.io/javascript-examples/accordion-menu/     |
+|    [Promise](callback-promise-async/)     | https://dori-dev.github.io/javascript-examples/callback-promise-async/ |
+|             [Clock](/clock/)              |         https://dori-dev.github.io/javascript-examples/clock/          |
+|         [Fact Year](/fact-year/)          |       https://dori-dev.github.io/javascript-examples/fact-year/        |
+|   [Form Validation](/form-validation/)    |    https://dori-dev.github.io/javascript-examples/form-validation/     |
+|          [Movie App](movie-app/)          |       https://dori-dev.github.io/javascript-examples/movie-app/        |
+| [Password Generator](password-generator/) |   https://dori-dev.github.io/javascript-examples/password-generator/   |
+|        [Popup Modal](popup-modal/)        |      https://dori-dev.github.io/javascript-examples/popup-modal/       |
+|         [Recipe App](recipe-app/)         |       https://dori-dev.github.io/javascript-examples/recipe-app/       |
+|         [Slideshow)](slideshow/)          |       https://dori-dev.github.io/javascript-examples/slideshow/        |
+|      [Smooth Scroll](smooth-scroll/)      |     https://dori-dev.github.io/javascript-examples/smooth-scroll/      |
+|           [Storage)](storage/)            |        https://dori-dev.github.io/javascript-examples/storage/         |
+|      [Theme Changer](theme-changer/)      |     https://dori-dev.github.io/javascript-examples/theme-changer/      |
+|             [Todos)](todos/)              |         https://dori-dev.github.io/javascript-examples/todos/          |
+|       [Video Player](video-player/)       |      https://dori-dev.github.io/javascript-examples/video-player/      |
+|           [Weather)](weather/)            |        https://dori-dev.github.io/javascript-examples/weather/         |
+|             [Wow JS](wow-js/)             |         https://dori-dev.github.io/javascript-examples/wow-js/         |
+
+#
 
 ## List of Samples
 
