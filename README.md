@@ -8,23 +8,23 @@ Many samples for Javascript.
 
 |                  Project                  |                                  Link                                  |
 | :---------------------------------------: | :--------------------------------------------------------------------: |
-|     [Accordion Menu](accordion-menu/)     |     https://dori-dev.github.io/javascript-examples/accordion-menu/     |
-|    [Promise](callback-promise-async/)     | https://dori-dev.github.io/javascript-examples/callback-promise-async/ |
-|             [Clock](/clock/)              |         https://dori-dev.github.io/javascript-examples/clock/          |
-|         [Fact Year](/fact-year/)          |       https://dori-dev.github.io/javascript-examples/fact-year/        |
-|   [Form Validation](/form-validation/)    |    https://dori-dev.github.io/javascript-examples/form-validation/     |
-|          [Movie App](movie-app/)          |       https://dori-dev.github.io/javascript-examples/movie-app/        |
-| [Password Generator](password-generator/) |   https://dori-dev.github.io/javascript-examples/password-generator/   |
-|        [Popup Modal](popup-modal/)        |      https://dori-dev.github.io/javascript-examples/popup-modal/       |
-|         [Recipe App](recipe-app/)         |       https://dori-dev.github.io/javascript-examples/recipe-app/       |
-|         [Slideshow)](slideshow/)          |       https://dori-dev.github.io/javascript-examples/slideshow/        |
-|      [Smooth Scroll](smooth-scroll/)      |     https://dori-dev.github.io/javascript-examples/smooth-scroll/      |
-|           [Storage)](storage/)            |        https://dori-dev.github.io/javascript-examples/storage/         |
-|      [Theme Changer](theme-changer/)      |     https://dori-dev.github.io/javascript-examples/theme-changer/      |
-|             [Todos)](todos/)              |         https://dori-dev.github.io/javascript-examples/todos/          |
-|       [Video Player](video-player/)       |      https://dori-dev.github.io/javascript-examples/video-player/      |
-|           [Weather)](weather/)            |        https://dori-dev.github.io/javascript-examples/weather/         |
-|             [Wow JS](wow-js/)             |         https://dori-dev.github.io/javascript-examples/wow-js/         |
+|     [Accordion Menu](accordion-menu/)     |     [Open](https://dori-dev.github.io/javascript-examples/accordion-menu/)     |
+|    [Promise](callback-promise-async/)     | [Open](https://dori-dev.github.io/javascript-examples/callback-promise-async/) |
+|             [Clock](/clock/)              |         [Open](https://dori-dev.github.io/javascript-examples/clock/)          |
+|         [Fact Year](/fact-year/)          |       [Open](https://dori-dev.github.io/javascript-examples/fact-year/)        |
+|   [Form Validation](/form-validation/)    |    [Open](https://dori-dev.github.io/javascript-examples/form-validation/)     |
+|          [Movie App](movie-app/)          |       [Open](https://dori-dev.github.io/javascript-examples/movie-app/)        |
+| [Password Generator](password-generator/) |   [Open](https://dori-dev.github.io/javascript-examples/password-generator/)   |
+|        [Popup Modal](popup-modal/)        |      [Open](https://dori-dev.github.io/javascript-examples/popup-modal/)       |
+|         [Recipe App](recipe-app/)         |       [Open](https://dori-dev.github.io/javascript-examples/recipe-app/)       |
+|         [Slideshow)](slideshow/)          |       [Open](https://dori-dev.github.io/javascript-examples/slideshow/)        |
+|      [Smooth Scroll](smooth-scroll/)      |     [Open](https://dori-dev.github.io/javascript-examples/smooth-scroll/)      |
+|           [Storage)](storage/)            |        [Open](https://dori-dev.github.io/javascript-examples/storage/)         |
+|      [Theme Changer](theme-changer/)      |     [Open](https://dori-dev.github.io/javascript-examples/theme-changer/)      |
+|             [Todos)](todos/)              |         [Open](https://dori-dev.github.io/javascript-examples/todos/)          |
+|       [Video Player](video-player/)       |      [Open](https://dori-dev.github.io/javascript-examples/video-player/)      |
+|           [Weather)](weather/)            |        [Open](https://dori-dev.github.io/javascript-examples/weather/)         |
+|             [Wow JS](wow-js/)             |         [Open](https://dori-dev.github.io/javascript-examples/wow-js/)         |
 
 #
 
